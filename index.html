@@ -1,85 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text2Image Login&Register</title>
 
-<body>
-    <!-- Header -->
-    <header>
-        <h2 class="logo">Pindo</h2>
-        <nav class="navigation">
-            <a href="#">Home</a>
-            <a href="#">Contact</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <button class="btnlogin-popup">Login</button>
-        </nav>
-    </header>
-
-    <!-- Halaman Login dan Daftar -->
-    <div class="wrapper">
-        <!-- Login Form -->
-        <div class="form-box login">
-            <h2>Login</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
-                    <label>Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="ingat">
-                    <label><input type="checkbox"> Simpan Password</label>
-                    <a href="#">Lupa Password?</a>
-                </div>
-                <button type="submit" class="btn">Login</button>
-                <div class="login-register">
-                    <p>Buat Akun Baru? <a href="#" class="register-link">Daftar</a></p>
-                </div>
-            </form>
+    <script type="module" src="register.js" defer></script>
+    <!-- BOXICONS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- STYLE -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Form Container -->
+    <div class="form-container">
+      <!-- Login Form Container -->
+      <div class="col col-1">
+        <div class="image-layer">
+          <img src="assets/img/white-outline.png" class="form-image-main" />
+          <img src="assets/img/dots.png" class="form-image dots" />
+          <img src="assets/img/coin.png" class="form-image coin" />
+          <img src="assets/img/spring.png" class="form-image spring" />
+          <img src="assets/img/rocket.png" class="form-image rocket" />
+          <img src="assets/img/cloud.png" class="form-image cloud" />
+          <img src="assets/img/stars.png" class="form-image stars" />
         </div>
-
-        <!-- Register Form -->
-        <div class="form-box register">
-            <h2>Daftar</h2>
-            <form action="#">
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="person"></ion-icon></span>
-                    <input type="text" required>
-                    <label>Username</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                    <input type="email" required>
-                    <label>Email</label>
-                </div>
-                <div class="input-box">
-                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                    <input type="password" required>
-                    <label>Password</label>
-                </div>
-                <div class="ingat">
-                    <label><input type="checkbox"> Simpan Akun</label>
-                </div>
-                <button type="submit" class="btn">Buat Akun</button>
-                <div class="login-register">
-                    <p>Akun Lama? <a href="#" class="login-link">Login</a></p>
-                </div>
-            </form>
+        <div>
+          <p class="featured-words">
+            You are few minutes way to boost your skills with ldiflex
+          </p>
         </div>
+      </div>
+      <div class="col col-2">
+        <div class="btn-box">
+          <button class="btn btn-1" id="login">Sign in</button>
+          <button class="btn btn-2" id="register">Sign up</button>
+        </div>
+     
+
+        <!--Login FORM Container-->
+        <div class="login-form">
+          <div class="form-title">
+            <span>Sign Up</span>
+          </div>
+          <div class="form-inputs">
+            <div class="input-box">
+              <input
+                type="text"
+                class="input-field"
+                placeholder="Username"
+                required
+              />
+              <i class="bx bx-user icon"></i>
+            </div>
+            <div class="input-box">
+                <input
+                  type="password"
+                  class="input-field"
+                  placeholder="Password"
+                  required
+                />
+                <i class="bx bx-lock-alt icon"></i>
+              </div>
+              <div class="forgot-pass">
+                <a href="#">Forgot Password?</a>
+              </div>
+              <div class="input-box">
+                <button class="input-submit">
+                    <span>Sign In</span>
+                    <i class="bx bx-right-arrow-alt"></i>
+                </button>
+              </div>
+          </div>
+          <div   class="social-login">
+            <i class="bx bxl-google"></i>
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-github"></i>
+          </div>
+        </div>
+        <!--Register FORM Container-->
+        <div class="register-form">
+          <div class="form-title">
+            <span>Create Account</span>
+          </div>
+          <div class="form-inputs">
+            <div class="input-box">
+              <input
+                type="text"
+                class="input-field"
+                placeholder="Email"
+                required
+              />
+              <i class="bx bx-envelope icon"></i>
+            </div>
+            <div class="input-box">
+              <input
+                type="text"
+                class="input-field"
+                placeholder="Username"
+                required
+              />
+              <i class="bx bx-user icon"></i>
+            </div>
+            <div class="input-box">
+                <input
+                  type="password"
+                  class="input-field"
+                  placeholder="Password"
+                  required
+                />
+                <i class="bx bx-lock-alt icon"></i>
+              </div>
+              <div class="forgot-pass">
+                <a href="#">Forgot Password?</a>
+              </div>
+              <div class="input-box">
+                <button class="input-submit">
+                    <span>Sign In</span>
+                    <i class="bx bx-right-arrow-alt"></i>
+                </button>
+              </div>
+          </div>
+          <div   class="social-login">
+            <i class="bx bxl-google"></i>
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-github"></i>
+          </div>
+        </div>
+         
+      </div>
     </div>
-
-    <script src="js/main.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+    <!-- JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
